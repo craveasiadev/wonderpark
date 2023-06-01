@@ -867,6 +867,9 @@ box-shadow: 0 0 0 0;
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    .m--bottom {
+        margin-bottom: 3rem;
+    }
     .s-about-content.pl-30 {
   padding-left: 0;
 }
