@@ -879,16 +879,14 @@ box-shadow: 0 0 0 0;
     .go-top {
         left: 2.5rem;
     } */
-
-    .go-top.active {
+    
+    .go-top {
         top: 95.5%;
         -webkit-transform: translateY(-96%);
         transform: translateY(-96%);
         -moz-transform: translateY(-96%);
         -ms-transform: translateY(-96%);
         -o-transform: translateY(-96%);
-}
-    .go-top {
         left: 1.5rem;
     }
     .m--bottom {

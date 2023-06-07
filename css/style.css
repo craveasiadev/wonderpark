@@ -338,16 +338,16 @@ margin-left: 0px;
 }
 /* WhatsApp Button */
 .go-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+.go-top {
     top: 90%;
     -webkit-transform: translateY(-90%);
     transform: translateY(-90%);
-    opacity: 1;
-    visibility: visible;
     -moz-transform: translateY(-90%);
     -ms-transform: translateY(-90%);
     -o-transform: translateY(-90%);
-}
-.go-top {
     position: fixed;
     cursor: pointer;
     left: 50px;
@@ -360,9 +360,12 @@ margin-left: 0px;
     line-height: 59px;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: .9s;
-    transition: .9s;
+    -webkit-transition: .3s;
+    transition: .3s;
     border-radius: 50%;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 /* .nav-whatsapp {
     cursor: pointer;
