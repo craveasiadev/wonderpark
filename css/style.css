@@ -342,12 +342,6 @@ margin-left: 0px;
     visibility: visible;
 }
 .go-top {
-    top: 90%;
-    -webkit-transform: translateY(-90%);
-    transform: translateY(-90%);
-    -moz-transform: translateY(-90%);
-    -ms-transform: translateY(-90%);
-    -o-transform: translateY(-90%);
     position: fixed;
     cursor: pointer;
     left: 50px;
@@ -360,12 +354,22 @@ margin-left: 0px;
     line-height: 59px;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: .3s;
-    transition: .3s;
+    bottom: 9%;
+    transform: translateY(-9%);
+    -webkit-transform: translateY(-9%);
+    -moz-transform: translateY(-9%);
+    -ms-transform: translateY(-9%);
+    -o-transform: translateY(-9%);
+    transition: 300ms linear;
+    -webkit-transition: 300ms linear;
+    -moz-transition: 300ms linear;
+    -ms-transition: 300ms linear;
+    -o-transition: 300ms linear;
     border-radius: 50%;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 /* .nav-whatsapp {
     cursor: pointer;
