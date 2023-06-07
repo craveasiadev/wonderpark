@@ -3151,16 +3151,17 @@ border-radius: 50%;
     transition: .3s;
     
 }
- .team-active .slick-dots li.slick-active button {
-}
+ /* .team-active .slick-dots li.slick-active button {
+} */
+
 .team-active .slick-dots li.slick-active button::before {
     background: url("../img/bg/active-dote.png");
     opacity: 1;
 }
 .team-active .slick-dots li button::before {
     content: "";
-    width: 19px;
-    height: 19px;
+    width: 12px;
+    height: 12px;
     background: url("../img/bg/dote.png");
     float: left;
     position: relative;
