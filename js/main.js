@@ -1,6 +1,14 @@
 (function ($) {
 "use strict";
 
+//whatsapp float
+$(window).on('scroll', function () {
+	var scrolled = $(window).scrollTop();
+	if (scrolled > 350) $('.go-top').addClass('active');
+	if (scrolled < 350) $('.go-top').removeClass('active');
+});
+
+
 
 
 // skill
@@ -175,22 +183,24 @@ $('.team-active').slick({
 			settings: {
 				slidesToShow: 3,
 				slidesToScroll: 1,
-				infinite: true,
-				dots: true
+				arrows: true
 			}
 		},
 		{
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 2,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				arrows: true
 			}
 		},
 		{
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
 			}
 		}
 	]
