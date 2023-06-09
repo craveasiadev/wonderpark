@@ -868,26 +868,14 @@ box-shadow: 0 0 0 0;
 /* small mobile :320px. */
 @media (max-width: 767px) {
 
-    /* .go-top.active {
-    top: 89%;
-    -webkit-transform: translateY(-89%);
-    transform: translateY(-89%);
-    -moz-transform: translateY(-89%);
-    -ms-transform: translateY(-89%);
-    -o-transform: translateY(-89%);
-   }
-    .go-top {
-        left: 2.5rem;
-    } */
-
     .go-top {
         left: 1.5rem;
-        bottom: 2.5%;
-        transform: translateY(-2.5%);
-        -webkit-transform: translateY(-2.5%);
-        -moz-transform: translateY(-2.5%);
-        -ms-transform: translateY(-2.5%);
-        -o-transform: translateY(-2.5%);
+        bottom: 6.5%;
+        transform: translateY(-6.5%);
+        -webkit-transform: translateY(-6.5%);
+        -moz-transform: translateY(-6.5%);
+        -ms-transform: translateY(-6.5%);
+        -o-transform: translateY(-6.5%);
 }
     .m--bottom {
         margin-bottom: 3rem;

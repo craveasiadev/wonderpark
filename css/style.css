@@ -413,12 +413,12 @@ label {
     line-height: 59px;
     opacity: 0;
     visibility: hidden;
-    bottom: 9%;
-    transform: translateY(-9%);
-    -webkit-transform: translateY(-9%);
-    -moz-transform: translateY(-9%);
-    -ms-transform: translateY(-9%);
-    -o-transform: translateY(-9%);
+    bottom: 7%;
+    transform: translateY(-7%);
+    -webkit-transform: translateY(-7%);
+    -moz-transform: translateY(-7%);
+    -ms-transform: translateY(-7%);
+    -o-transform: translateY(-7%);
     transition: 300ms linear;
     -webkit-transition: 300ms linear;
     -moz-transition: 300ms linear;
