@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/careers",
+        "destination": "https://wonderparkcareers.paperform.co/",
+        "permanent": true
+      }
+    ]
+  }
+  
