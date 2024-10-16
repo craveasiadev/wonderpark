@@ -824,7 +824,7 @@ label {
 .slider-content {
     position: relative;
     z-index: 2;
-
+    
 }
 
 .slider-content.s-slider-content.text2 {
@@ -957,6 +957,12 @@ label {
 .second-header-btn .btn:hover {
     color: #fff;
     background: #12265a;
+}
+
+.img-main-wsp {
+    position: absolute;
+    top: 0;
+
 }
 
 .img-main {
