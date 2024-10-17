@@ -972,10 +972,12 @@ box-shadow: 0 0 0 0;
     margin-top: -52px;
     }
     .img-main {
-    top:-130px;
+    top:-0.5rem;
+    width:92%;
 }
 .img-main-wsp {
-    top:-130px;
+    top:1rem;
+    width:92%;
 }
     .about-content .nav-tabs {
     width: 94%;
