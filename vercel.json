@@ -4,6 +4,11 @@
         "source": "/careers",
         "destination": "https://wonderparkcareers.paperform.co/",
         "permanent": true
+      },
+      {
+        "source": "/info",
+        "destination": "https://www.wonderpark.my/",
+        "permanent": true
       }
     ]
   }
