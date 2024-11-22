@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/conference.css">
+    
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="fullscreen-video">
+            <source src="video/test.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="input-container">
+            <input id="nameInput" type="text" value="Enter Your Name" class="text-input" maxlength="20"> 
+        </div>
+    </div>
+    <script>
+        const name = document.getElementById("nameInput");
+
+        name.addEventListener('focus', () => {
+            name.value = ""
+        })
+    </script>
+</body>
+</html>
