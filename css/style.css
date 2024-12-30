@@ -1166,7 +1166,6 @@ label {
 }
 
 .login li a {
-    color: #fff;
     text-transform: uppercase;
 }
 
@@ -2576,13 +2575,25 @@ section:hover .section-title h2::before {
     display: none;
 }
 
+.second-services-content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    padding: 10px 0; 
+}
+
 .second-services-content h5 {
     font-weight: 800;
-    transition: .3s;
-    letter-spacing: 0;
     font-size: 24px;
     color: #fff;
+    margin: 0;
+    letter-spacing: 0;
+    transition: 0.3s;
 }
+
 
 .second-services-content p {
     margin-bottom: 0;
