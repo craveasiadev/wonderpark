@@ -66,7 +66,7 @@
 }
     .animations-01,.animations-02,.animations-03,.animations-04,
     .animations-05,.animations-06,.animations-07,.animations-08,.animations-09,.animations-10,.animations-11,
-    .animations-11,.animations-12,.animations-13,.animations-14,.animations-15,.team-active .slick-arrow
+    .animations-11,.animations-12,.animations-13,.animations-14,.animations-15
     {
         display: none !important;
     }
@@ -415,7 +415,7 @@ margin-right: 8px;
 }
 .animations-01,.animations-02,.animations-03,.animations-04,
     .animations-05,.animations-06,.animations-07,.animations-08,.animations-09,.animations-10,.animations-11,
-    .animations-11,.animations-12,.animations-13,.animations-14,.animations-15,.team-active .slick-arrow{
+    .animations-11,.animations-12,.animations-13,.animations-14,.animations-15{
         display: none !important;
     }
 }
@@ -875,7 +875,7 @@ box-shadow: 0 0 0 0;
     padding: 10px 0;
 }
        .animations-01,.animations-02,.animations-03,.animations-04,
-    .animations-05,.animations-06,.animations-07,.animations-08,.animations-09,.animations-10,.animations-11,.team-active .slick-arrow{
+    .animations-05,.animations-06,.animations-07,.animations-08,.animations-09,.animations-10,.animations-11{
         display: none !important;
     }
 
@@ -947,7 +947,7 @@ box-shadow: 0 0 0 0;
 }
     .animations-01,.animations-02,.animations-03,.animations-04,
     .animations-05,.animations-06,.animations-07,.animations-08,.animations-09,.animations-10,.animations-11,
-    .animations-11,.animations-12,.animations-13,.animations-14,.animations-15,.team-active .slick-arrow{
+    .animations-11,.animations-12,.animations-13,.animations-14,.animations-15{
         display: none !important;
     }
 .s-single-services .services-icon {
