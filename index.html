@@ -23,7 +23,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+<style>
+    .btn {
+        white-space: normal; /* Allows text wrapping */
+        word-wrap: break-word;
+    }
 
+    .buy-ticket {
+        font-size: 10pt ;
+    }
+
+    @media screen and (max-width: 768px) {
+        .buy-ticket {
+            font-size: 8pt !important;
+        }
+        .whatsapp-menu{
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .buy-ticket {
+            font-size: 14pt !important;
+        }
+    }
+</style>
 <body>
     <!-- header -->
     <header class="header-area header-three">
@@ -43,14 +67,35 @@
                                     <ul>
                                         <li class="has-sub"><a href="index.html">Home</a></li>
                                         <li><a href="#services">Activities</a></li>
-                                        <!-- <li class="nav-whatsapp"><a href="http://wa.me/60126503135" target="_blank">
-                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                                        </a></li> -->
-                                        <li class="second-header-btn" style="margin-right: 1rem;">
+                                     
+                                        <li class="second-header-btn whatsapp-menu" style="margin-right: 1rem;">
                                             <a href="https://api.whatsapp.com/send?phone=60128996928&text=Hello%21%20May%20I%20inquire%20regarding%20the%20package%20offers%3F" class="btn text-white"><i
                                                     class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;WhatsApp
                                                 Us</a>
                                         </li>
+
+                                        <li class="d-lg-none"><a href="https://api.whatsapp.com/send?phone=60128996928&text=Hello%21%20May%20I%20inquire%20regarding%20the%20package%20offers%3F">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                            WhatsApp Us</a>
+                                        </li>
+
+                                        <li class="has-sub d-lg-none">
+                                            <a href="javacript:void(0)">Promo Tickets</a>
+                                            <ul>
+                                               <li><a href="https://shop.wonderpark.my/">Melaka</a></li>
+                                               <li><a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu">Kuala Terengganu</a></li>
+                                            </ul>
+                                        </li>
+
+                                           <!-- <li class="nav-whatsapp"><a href="http://wa.me/60126503135" target="_blank">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                        </a></li> 
+                                        
+                                        <li class="second-header-btn" style="margin-right: 1rem;">
+                                            <a href="https://api.whatsapp.com/send?phone=60128996928&text=Hello%21%20May%20I%20inquire%20regarding%20the%20package%20offers%3F" class="btn text-white"><i
+                                                    class="fab fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;WhatsApp
+                                                Us</a>
+                                        </li> -->
 
                                         <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a><li> -->
 
@@ -139,7 +184,7 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="col-lg-6 col-md-6">
                                 <div class="slider-content-wsp s-slider-content-wsp pt-100">
-                                    <h5 data-animation="fadeInUp" data-delay=".4s">GRAND OPENING (JAN'25)</h5>
+                                    <h5 data-animation="fadeInUp" data-delay=".4s">GRAND OPENING</h5>
                                     <h2 data-animation="fadeInUp" data-delay=".4s">RM18 SAHAJA?!?! WONDERPARK GO! IN DATARAN AUSTIN, KUALA TERENGGANU WITH ALL-NEW CATZANIA ZONE.</h2>
                                     <p data-animation="fadeInUp" data-delay=".6s">Stay turned in our <a href="https://www.facebook.com/wonderpark.my" target="_blank" style="color: inherit; text-decoration: none;">Facebook</a> for latest promo and details!</p>
 
@@ -147,6 +192,19 @@
                                         <a href="#contact" class="btn mr-15" data-animation="fadeInUp"
                                             data-delay=".4s">Learn More</a>
                                     </div> -->
+                                    <div class="row pt-1">
+                                        <div class="col-lg-5 col-md-6 col-12 mb-2">
+                                            <a href="https://shop.wonderpark.my/" class="btn btn-primary w-100 buy-ticket">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Buy Kuala Terengganu <br/> Promo Tickets >
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-5 col-md-6 col-12 mb-2">
+                                            <a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu buy-ticket" class="btn btn-primary w-100 buy-ticket">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Buy Melaka <br/> Promo Tickets >
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
