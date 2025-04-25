@@ -1480,10 +1480,10 @@ padding-left: 0;
     background-position: center center;
     background-repeat: no-repeat;
 }
-	.row {
+	/* .row {
     margin-right: 0;
     margin-left: 0;
-}
+} */
 	.portfolio .col3 .grid-item, .portfolio .col2 .grid-item {
     width: 100%;
     padding: 15px;
@@ -1544,10 +1544,10 @@ padding-left: 0;
 	.pages-content img {
     height: auto;
 }
-	.row {
+	/* .row {
      margin-right: 0;
     margin-left: 0;
-}
+} */
 	.header-btn.second-header-btn {
     display: none;
 	}

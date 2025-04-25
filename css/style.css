@@ -826,12 +826,12 @@ label {
     z-index: 2;
 }
 
-.slider-content-wsp {
+/* .slider-content-wsp {
     position: relative;
     z-index: 2;
     width:145%;
     margin-left:70%;
-}
+} */
 
 .slider-content.s-slider-content.text2 {
     margin-top: 0;
@@ -971,12 +971,12 @@ label {
     background: #12265a;
 }
 
-.img-main-wsp {
+/* .img-main-wsp {
     position: absolute;
     left: -120px;
     top: 0;
 
-}
+} */
 
 .img-main {
     position: absolute;
