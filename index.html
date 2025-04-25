@@ -104,7 +104,7 @@
 }
 .floating-buttons {
         position: fixed;
-        bottom: 20px;
+        bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 9999;
@@ -133,6 +133,28 @@
     .w-70{
         width: 70% !important;
     }
+    .activity-card {
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.activity-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.activity-card .services-hover {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+.activity-card .second-services-content {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
 </style>
 <body>
     <!-- header -->
@@ -344,7 +366,7 @@
                             <!-- Right Side - Image -->
                             <div class="col-lg-6 col-md-6 text-center">
                                 <img src="img/slider/main.png" alt="slider-overlay"
-                                    style="max-width: 100%; height: auto;" 
+                                    style="min-width: 100%; height: auto;" 
                                     data-animation="fadeInLeft" data-delay=".2s">
                             </div>
                         </div>
@@ -445,7 +467,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;" style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;" style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/1 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -456,7 +478,7 @@
                     </div>
                     
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/2 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -466,17 +488,17 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card">
                             <img src="img/bg/3 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
                                     <h5>FROG MACHINE</h5>
                                 </div>
-                             </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/4 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -486,7 +508,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/5 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -496,7 +518,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/6 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -505,7 +527,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/7 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -515,7 +537,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/8 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -525,7 +547,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/9 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -535,7 +557,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/10 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -545,7 +567,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/11 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -554,7 +576,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/12 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -564,7 +586,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/13 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -574,7 +596,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/14 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -584,7 +606,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/15 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -594,7 +616,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/16 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -604,7 +626,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/17 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -614,7 +636,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/18 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -624,7 +646,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/19 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -634,7 +656,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/20 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -644,7 +666,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/21 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -654,7 +676,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/22 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -664,7 +686,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/23 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -674,7 +696,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
-                        <div class="s-single-services text-center"  style="border-radius: 50px; overflow: hidden;">
+                        <div class="s-single-services text-center activity-card"  style="border-radius: 50px; overflow: hidden;">
                             <img src="img/bg/24 - activities_squarenotxt.png" alt="feature">
                             <div class="services-hover">
                                 <div class="second-services-content">
@@ -683,9 +705,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
             </div>
@@ -1589,15 +1608,15 @@
     <!-- main-area-end -->
     <div class="floating-buttons d-block d-md-none">
         <div class="row">
-            <div class="mb-2 col-md-6 col-12 ">
-                <a href="https://kiddotown.storehub.me/" class="btn btn-primary buy-ticket w-70 ml-5" style="font-size: 7pt !important;">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Buy Melaka Promo Tickets
+            <div class="mb-2 col-md-6 col-6">
+                <a href="https://kiddotown.storehub.me/" class="btn btn-primary buy-ticket w-70 ml-4" style="font-size: 7pt !important;">
+                    <i class="fa fa-shopping-cart mr-1" aria-hidden="true"></i>Buy Melaka <br> Promo  <br> Tickets >
                 </a>
             </div>
     
-            <div class="mb-2 col-md-6 col-12 ">
-                <a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu" class="ml-md-0 ml-5 btn btn-primary buy-ticket w-70" style="font-size: 7pt !important;">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Buy Kuala Terengganu Promo Tickets
+            <div class="mb-2 col-md-6 col-6">
+                <a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu" class="ml-md-0 ml-n4 btn btn-primary buy-ticket w-70" style="font-size: 7pt !important;">
+                    <i class="fa fa-shopping-cart mr-1" aria-hidden="true"></i>Buy Kuala Terengganu Promo Tickets >
                 </a>
             </div>
         </div>
