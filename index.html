@@ -51,6 +51,12 @@
         font-size: 10pt ;
     }
 
+    @media (max-width: 767px) {
+        .img-main-wsp {
+            top: 6rem;
+            left: 0px;
+        }
+    }
     @media screen and (max-width: 768px) {
         .buy-ticket {
             font-size: 8pt !important;
@@ -59,6 +65,13 @@
             display: none !important;
         }
     }
+
+    @media (max-width: 575px) {
+        .header-area.header-three .container {
+            bottom: 28px;
+        }
+    }
+
 
     @media screen and (max-width: 425px) {
         .buy-ticket {
@@ -73,6 +86,30 @@
             top: 100px !important;
         }
     }
+
+    .slider-content img {
+    width: 100%;
+    max-width: 600px; /* or whatever max size you prefer */
+}
+.mobile-floating-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.mobile-floating-buttons .btn {
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
 </style>
 <body>
     <!-- header -->
@@ -213,12 +250,8 @@
                                     <h5 data-animation="fadeInUp" data-delay=".4s">GRAND OPENING</h5>
                                     <h2 data-animation="fadeInUp" data-delay=".4s">RM18 SAHAJA?!?! WONDERPARK GO! IN DATARAN AUSTIN, KUALA TERENGGANU WITH ALL-NEW CATZANIA ZONE.</h2>
                                     <p data-animation="fadeInUp" data-delay=".6s">Stay turned in our <a href="https://www.facebook.com/wonderpark.my" target="_blank" style="color: inherit; text-decoration: none;">Facebook</a> for latest promo and details!</p>
-
-                                    <!-- <div class="slider-btn mt-30">
-                                        <a href="#contact" class="btn mr-15" data-animation="fadeInUp"
-                                            data-delay=".4s">Learn More</a>
-                                    </div> -->
-                                    <div class="row pt-1">
+                                    <!-- Desktop & Tablet View -->
+                                    <div class="row pt-1 d-none d-md-flex">
                                         <div class="col-lg-5 col-md-6 col-12 mb-2">
                                             <a href="https://shop.wonderpark.my/" class="btn btn-primary w-100 buy-ticket">
                                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Buy Melaka <br/> Promo Tickets >
@@ -229,9 +262,18 @@
                                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Buy Kuala Terengganu <br/> Promo Tickets >
                                             </a>
                                         </div>
-                                       
                                     </div>
-                                    
+
+                                    <!-- Mobile Floating Buttons -->
+                                    <div class="mobile-floating-buttons d-md-none">
+                                        <a href="https://shop.wonderpark.my/" class="btn btn-primary w-50">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i><br/>Melaka
+                                        </a>
+                                        <a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu" class="btn btn-primary w-50">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i><br/>Kuala Terengganu
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
@@ -256,32 +298,37 @@
             </div>
             <div class="slider-active">
                 <div class="single-slider slider-bg d-flex align-items-center"
-                    style="background: url(img/slider/slider_img_bg.png) no-repeat; ">
-                    <div class="img-main" data-animation="fadeInLeft" data-delay=".2s"> <img src="img/slider/main.png"
-                            alt="slider-overlay"></div>
-                    <div class="container">
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="slider-content s-slider-content pt-100">
+                    style="background: url(img/slider/slider_img_bg.png) no-repeat center center/cover;">
+                    <div class="container-fluid">
+                        <div class="row justify-content-end align-items-center g-0 flex-column-reverse flex-lg-row">
+                            <!-- Left Side - Text Content -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="slider-content s-slider-content pt-100 pr-4">
                                     <h5 data-animation="fadeInUp" data-delay=".4s">INDOOR FAMILY PARK​</h5>
                                     <h2 data-animation="fadeInUp" data-delay=".4s">"PUAS-PUAS TANPA HAD!"</h2>
-                                    <p data-animation="fadeInUp" data-delay=".6s">Experience unlimited play, fun for all
-                                        age groups with just a single ticket in Melaka & Kuala Terengganu. Sungai Petani is opening soon!</p>
+                                    <p data-animation="fadeInUp" data-delay=".6s">
+                                        Experience unlimited play, fun for all age groups with just a single ticket in Melaka & Kuala Terengganu. 
+                                        Sungai Petani is opening soon!
+                                    </p>
                                     <div class="slider-btn mt-30">
-                                        <a href="#contact" class="btn mr-15" data-animation="fadeInUp"
-                                            data-delay=".4s">Learn More</a>
+                                        <a href="#contact" class="btn mr-15" data-animation="fadeInUp" data-delay=".4s">Learn More</a>
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6">
-
+                        
+                            <!-- Right Side - Image -->
+                            <div class="col-lg-6 col-md-6 text-center">
+                                <img src="img/slider/main.png" alt="slider-overlay"
+                                    style="max-width: 100%; height: auto;" 
+                                    data-animation="fadeInLeft" data-delay=".2s">
                             </div>
                         </div>
+                        
                     </div>
                 </div>
-
             </div>
+            
+            
 
 
         </section>
@@ -1648,11 +1695,11 @@
     <!-- footer-end -->
 
     <!-- WhatsApp Button -->
-    <div class="go-top">
+    <!-- <div class="go-top">
         <a href="https://api.whatsapp.com/send?phone=60128996928&text=Hello%21%20May%20I%20inquire%20regarding%20the%20package%20offers%3F" class="float" target="_blank">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
-    </div>
+    </div> -->
     <!-- WhatsApp Button Ends -->
 
     <!-- Tidio Live Chat -->
