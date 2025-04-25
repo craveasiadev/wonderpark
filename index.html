@@ -91,24 +91,37 @@
     width: 100%;
     max-width: 600px; /* or whatever max size you prefer */
 }
-.mobile-floating-buttons {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    z-index: 999;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
+.floating-buttons {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+    }
 
-.mobile-floating-buttons .btn {
-    border-radius: 0;
-    font-size: 14px;
-    padding: 10px 0;
-    text-align: center;
-}
+    .floating-buttons .col-6 {
+        padding: 0 5px;
+    }
 
+    .floating-buttons .buy-ticket {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .floating-buttons a .fa {
+        margin-right: 10px;
+    }
+
+    .w-70{
+        width: 70% !important;
+    }
 
 </style>
 <body>
@@ -265,14 +278,14 @@
                                     </div>
 
                                     <!-- Mobile Floating Buttons -->
-                                    <div class="mobile-floating-buttons d-md-none">
+                                    <!-- <div class="mobile-floating-buttons d-md-none">
                                         <a href="https://shop.wonderpark.my/" class="btn btn-primary w-50">
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i><br/>Melaka
                                         </a>
                                         <a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu" class="btn btn-primary w-50">
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i><br/>Kuala Terengganu
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                 </div>
                             </div>
@@ -1562,7 +1575,21 @@
 
     </main>
     <!-- main-area-end -->
-
+    <div class="floating-buttons d-block d-md-none">
+        <div class="row">
+            <div class="mb-2 col-md-6 col-12 ">
+                <a href="https://shop.wonderpark.my/" class="btn btn-primary buy-ticket w-70 ml-5" style="font-size: 7pt !important;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Buy Melaka Promo Tickets
+                </a>
+            </div>
+    
+            <div class="mb-2 col-md-6 col-12 ">
+                <a href="https://shop2.wonderpark.my/e-tickets/wonderpark-kuala-terengganu" class="ml-md-0 ml-5 btn btn-primary buy-ticket w-70" style="font-size: 7pt !important;">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Buy Kuala Terengganu Promo Tickets
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <footer class="footer-bg footer-p">
         <div class="footer-top pt-120 pb-80  p-relative"
@@ -1693,7 +1720,6 @@
         </div>
     </footer>
     <!-- footer-end -->
-
     <!-- WhatsApp Button -->
     <!-- <div class="go-top">
         <a href="https://api.whatsapp.com/send?phone=60128996928&text=Hello%21%20May%20I%20inquire%20regarding%20the%20package%20offers%3F" class="float" target="_blank">
