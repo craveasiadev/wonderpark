@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Wonderpark Melaka</title>
+  <style>
+    :root {
+      --primary: #0077cc;
+      --primary-dark: #005fa3;
+      --secondary: #f8f9fa;
+      --accent: #ffd700;
+      --text-primary: #333;
+      --text-secondary: #6c757d;
+      --white: #ffffff;
+      --background: #f8f9fa;
+      --section-bg: #ffffff;
+      --border: #e9ecef;
+    }
+
+    #contact {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--background);
+      padding-top: 60px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    header.scrolled {
+      background-color: rgba(0, 119, 204, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav ul li {
+      margin-left: 15px;
+      font-size: 0.9rem;
+    }
+    
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+    }
+    
+    nav ul li a:hover {
+      opacity: 1;
+    }
+    
+    .main-content {
+      padding: 40px 0;
+    }
+    
+    .policy-header {
+      text-align: center;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.6s ease forwards;
+    }
+    
+    .effective-date {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+    
+    .policy-section {
+      background: var(--section-bg);
+      border-radius: 10px;
+      padding: 25px 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    
+    .policy-section:nth-child(1) { animation: fadeIn 0.6s 0.1s ease forwards; }
+    .policy-section:nth-child(2) { animation: fadeIn 0.6s 0.2s ease forwards; }
+    .policy-section:nth-child(3) { animation: fadeIn 0.6s 0.3s ease forwards; }
+    .policy-section:nth-child(4) { animation: fadeIn 0.6s 0.4s ease forwards; }
+    .policy-section:nth-child(5) { animation: fadeIn 0.6s 0.5s ease forwards; }
+    .policy-section:nth-child(6) { animation: fadeIn 0.6s 0.6s ease forwards; }
+    .policy-section:nth-child(7) { animation: fadeIn 0.6s 0.7s ease forwards; }
+    .policy-section:nth-child(8) { animation: fadeIn 0.6s 0.8s ease forwards; }
+    .policy-section:nth-child(9) { animation: fadeIn 0.6s 0.9s ease forwards; }
+    
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+    
+    p {
+      margin-bottom: 15px;
+      color: var(--text-primary);
+    }
+    
+    ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      opacity: 0;
+      animation: fadeIn 0.6s 1s ease forwards;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: var(--white);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+    
+    .company-info {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid var(--border);
+    }
+    
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+      }
+      
+      nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin: 5px 10px;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      h2 {
+        font-size: 1.2rem;
+      }
+      
+      body {
+        padding-top: 90px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .policy-section {
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="header-content">
+      <div class="logo">Wonderpark Melaka</div>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="main-content">
+      <div class="policy-header">
+        <h1>Privacy Policy for Wonderpark Melaka</h1>
+        <p class="effective-date">Effective Date: 01 January 2024</p>
+      </div>
+      
+      <div class="policy-section" id="introduction">
+        <h2>1. Introduction</h2>
+        <p>Welcome to Wonderpark Melaka, operated by Kiddo Heritage Sdn Bhd. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information when you visit our Park or use our services.</p>
+      </div>
+      
+      <div class="policy-section" id="collection">
+        <h2>2. Information We Collect</h2>
+        <p>We may collect the following types of personal information:</p>
+        <ul>
+          <li><strong>Contact Information:</strong> Name, email address, phone number, and mailing address.</li>
+          <li><strong>Payment Information:</strong> Credit card details and billing information for ticket purchases.</li>
+          <li><strong>Visitor Information:</strong> Age, gender, and preferences related to your visit.</li>
+          <li><strong>Usage Data:</strong> Information about your interactions with our website and services.</li>
+        </ul>
+      </div>
+      
+      <div class="policy-section" id="usage">
+        <h2>3. How We Use Your Information</h2>
+        <p>We may use your personal information for the following purposes:</p>
+        <ul>
+          <li>To process and manage ticket purchases.</li>
+          <li>To communicate with you regarding your visit, promotions, and events.</li>
+          <li>To improve our services and enhance visitor experiences.</li>
+          <li>To comply with legal obligations and protect our rights.</li>
+        </ul>
+      </div>
+      
+      <div class="policy-section">
+        <h2>4. Disclosure of Your Information</h2>
+        <p>We do not sell, rent, or lease your personal information to third parties. We may share your information with:</p>
+        <ul>
+          <li>Service providers who assist in operations, such as payment processors and marketing services.</li>
+          <li>Legal authorities if required by law or to protect our rights.</li>
+        </ul>
+      </div>
+      
+      <div class="policy-section">
+        <h2>5. Data Security</h2>
+        <p>We implement reasonable security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction. However, no method of transmission over the internet is 100% secure.</p>
+      </div>
+      
+      <div class="policy-section">
+        <h2>6. Cookies and Tracking Technologies</h2>
+        <p>We may use cookies and similar tracking technologies to enhance your experience on our website. You can manage your cookie preferences through your browser settings.</p>
+      </div>
+      
+      <div class="policy-section">
+        <h2>7. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access and request a copy of your personal information.</li>
+          <li>Request corrections to inaccurate or incomplete information.</li>
+          <li>Withdraw consent for the use of your information, where applicable.</li>
+        </ul>
+      </div>
+      
+      <div class="policy-section">
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be effective immediately upon posting on our website. We encourage you to review this policy periodically.</p>
+      </div>
+      
+      <div class="policy-section" id="contact">
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
+        <div class="company-info">
+          <p><strong>Kiddo Heritage Sdn Bhd (1329409-W)</strong></p>
+          <p>Address: B3-U6-13, Solaris Dutamas, Jalan Dutamas 1, 50480 Kuala Lumpur, Malaysia</p>
+          <p>E-mail: wonderparkmelaka@gmail.com</p>
+          <p>Mobile Number: +6012-899-6928</p>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2024 Wonderpark Melaka. All rights reserved.</p>
+      <p>Operated by Kiddo Heritage Sdn Bhd (1329409-W)</p>
+    </footer>
+  </div>
+  
+  <a href="#" class="back-to-top" id="back-to-top">↑</a>
+  
+  <script>
+    // Show/hide back-to-top button
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('back-to-top');
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    
+    // Add scrolled class to header
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    // Smooth scroll to sections
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        let target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+        
+        // If it's the back to top button, scroll to top
+        if (this.getAttribute('href') === '#') {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
