@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/carousel.css">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -1569,8 +1570,33 @@
                 <div class="row">
 
                     <div class="col-lg-6 order-1">
-                        <img src="img/bg/kuala_terengganu.png" alt="wkt ticket price" style="width: 500px;">
-                        <img src="img/bg/vipunlimited_entry.png" alt="add on" style="width: 500px;">
+                        <div class="carousel-container-custom"
+                             style="max-width: 500px; aspect-ratio: 16/9;"> <!-- Removed margin: 0 auto; from here as it's in the CSS now -->
+                            <div class="carousel-images-custom h-100"> <!-- Using Bootstrap h-100 for height -->
+                                <!-- Images for the carousel -->
+                                <img src="img/slider/wktholidayssmall.png" onerror="this.onerror=null;this.src='https://placehold.co/500x300/007bff/ffffff?text=Image+1';" alt="Wonderpark Kuala Terengganu Ticket Price">
+                                <img src="img/slider/wktweekdaysmall.png" onerror="this.onerror=null;this.src='https://placehold.co/500x300/28a745/ffffff?text=Image+2';" alt="Add-on VIP Unlimited Entry">
+                            
+                            </div>
+        
+                            <!-- Navigation Buttons -->
+                            <button class="carousel-btn-custom prev" onclick="prevSlide()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn-custom next" onclick="nextSlide()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+        
+                            <!-- Pagination Dots -->
+                             
+                            <div class="carousel-dots-custom">
+                                
+                            </div>
+                            <div class="carousel-dots-custom1">
+                                <img src="img/bg/vipunlimited_entry.png" onerror="this.onerror=null;this.src='https://placehold.co/500x300/28a745/ffffff?text=Image+2';" alt="Add-on VIP Unlimited Entry">
+                            </div>
+                            
+                        </div>
                     </div>
                     <div class="col-lg-6 order-2">
                         <div class="contact-bg02 wow fadeInLeft  animated">
@@ -1822,6 +1848,89 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
+<script>
+        const carouselImages = document.querySelector('.carousel-images-custom');
+        const carouselDotsContainer = document.querySelector('.carousel-dots-custom');
+        const images = carouselImages.querySelectorAll('img');
+        let currentIndex = 0;
+        let autoSlideInterval;
+        const slideDuration = 3500; // 5 seconds
+
+        // Function to show a specific slide
+        function showSlide(index) {
+            if (index >= images.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = images.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            carouselImages.style.transform = `translateX(${offset}%)`;
+            updateDots();
+        }
+
+        // Function to go to the next slide
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        // Function to go to the previous slide
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        // Function to start auto-sliding
+        function startAutoSlide() {
+            // Clear any existing interval to prevent multiple intervals running
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(nextSlide, slideDuration);
+        }
+
+        // Function to pause auto-sliding
+        function pauseAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Function to resume auto-sliding
+        function resumeAutoSlide() {
+            startAutoSlide();
+        }
+
+        // Function to create pagination dots
+        function createDots() {
+            carouselDotsContainer.innerHTML = ''; // Clear existing dots
+            images.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.classList.add('carousel-dot-custom');
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                }
+                dot.addEventListener('click', () => showSlide(index));
+                carouselDotsContainer.appendChild(dot);
+            });
+        }
+
+        // Function to update active dot
+        function updateDots() {
+            const dots = carouselDotsContainer.querySelectorAll('.carousel-dot-custom');
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize carousel when the DOM is fully loaded
+        // This ensures the script runs after all HTML elements are available
+        document.addEventListener('DOMContentLoaded', function() {
+            createDots();
+            showSlide(0); // Show the first slide
+            startAutoSlide(); // Start auto-sliding
+        });
+    </script>
 </body>
 
 </html>

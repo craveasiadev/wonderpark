@@ -1,0 +1,124 @@
+.carousel-container-custom { /* Renamed to avoid potential conflicts */
+            overflow: hidden;
+            position: relative;
+            border-radius: 1rem; /* Equivalent to rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-lg */
+            margin: 0 auto; /* Center the carousel */
+            height: 100%;
+        }
+        .carousel-images-custom { /* Renamed */
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+        }
+        .carousel-images-custom img {
+            min-width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 1rem; /* Apply rounded corners to images inside carousel */
+        }
+        .carousel-btn-custom { /* Renamed from .carousel-button */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(24, 24, 24, 0.068);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 9999px; /* Fully rounded */
+            transition: background-color 0.3s ease;
+        }
+        .carousel-btn-custom:hover {
+            background-color: rgba(0, 0, 0, 0.404);
+        }
+        .carousel-btn-custom.prev {
+            left: 1rem;
+        }
+        .carousel-btn-custom.next {
+            right: 1rem;
+        }
+        .carousel-dots-custom { /* Renamed */
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+        .carousel-dots-custom1 { /* Renamed */
+            position: absolute;
+            bottom: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 11;
+        }
+        .carousel-dot-custom { /* Renamed */
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .carousel-dot-custom.active {
+            background-color: #007bff; /* Bootstrap primary blue */
+            transform: scale(1.2);
+        }
+        .contact-bg02 {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .section-title h5 {
+            color: #343a40; /* Bootstrap dark text */
+            font-size: 1.5rem; /* Larger font size */
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .section-title h3 {
+            color: #495057; /* Slightly lighter dark text */
+            font-size: 1.25rem; /* Adjusted font size */
+            line-height: 1.8;
+            margin-top: 0.75rem;
+        }
+        .section-title ul li {
+            color: #6c757d; /* Bootstrap muted text */
+            font-size: 1rem;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+        }
+        .section-title ul li i {
+            margin-right: 0.5rem;
+            color: #007bff; /* Bootstrap primary blue */
+            font-size: 1.125rem;
+            padding-top: 0.25rem;
+        }
+        .custom-buy-ticket-btn { /* Custom class for the BUY TICKET NOW button */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff; /* Bootstrap primary blue */
+            color: white;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: none; /* Ensure no default button border */
+        }
+        .custom-buy-ticket-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: translateY(-2px);
+        }
+        .custom-buy-ticket-btn i {
+            margin-right: 0.5rem;
+        }
